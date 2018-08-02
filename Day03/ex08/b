@@ -1,0 +1,15 @@
+Testing 2147483647 : 2147483647
+Testing 42 : 42
+Testing [spaces] 2abc : 2
+Testing a50 : 0
+Testing +2147 : 2147
+Testing -1 : -1
+Testing [newline] : 0
+Testing -2147483648 : -2147483648
+Testing +-80 : 0
+Testing -+80 : 0
+Testing - 80 : 0
+Testing + 80 : 0
+Testing  : 0
+Testing 0 : 0
+Testing -0 : 0
