@@ -1,22 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/31 17:39:33 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/01 12:29:30 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 18:52:48 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/02 00:27:12 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+int		ft_is_prime(int nb)
 {
-	double	div;
-	double	mod;
+	long	i;
+	int		w;
 
-	div = (*a) / (*b);
-	mod = (*a) % (*b);
-	*a = div;
-	*b = mod;
+	i = 5;
+	w = 2;
+	if (nb < 0)
+		return (0);
+	if (nb == 2)
+		return (1);
+	if (nb == 3)
+		return (1);
+	if (nb == 1)
+		return (0);
+	if (nb % 2 == 0)
+		return (0);
+	if (nb % 3 == 0)
+		return (0);
+	while (i * i <= nb)
+	{
+		if (nb % i == 0)
+			return (0);
+		i += w;
+		w = 6 - w;
+	}
+	return (1);
 }

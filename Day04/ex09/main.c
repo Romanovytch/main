@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/01 01:28:00 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/01 01:28:31 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 23:48:23 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/02 00:41:50 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_eight_queens_puzzle_2(void);
 
-void	ft_putchar(char c)
+int	main()
 {
-	write(1, &c, 1);
+	ft_eight_queens_puzzle_2();
+	return (0);
 }

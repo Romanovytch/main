@@ -1,39 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sort_integer_table.c                            :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/01 11:29:19 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/01 12:00:25 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 18:52:48 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/02 00:30:27 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	swap(int *a, int *b)
+int		is_prime(int nb)
 {
-	int	c;
+	long	i;
+	int		w;
 
-	c = *a;
-	*a = *b;
-	*b = c;
+	i = 5;
+	w = 2;
+	if (nb < 0)
+		return (0);
+	if (nb == 2)
+		return (1);
+	if (nb == 3)
+		return (1);
+	if (nb == 1)
+		return (0);
+	if (nb % 2 == 0)
+		return (0);
+	if (nb % 3 == 0)
+		return (0);
+	while (i * i <= nb)
+	{
+		if (nb % i == 0)
+			return (0);
+		i += w;
+		w = 6 - w;
+	}
+	return (1);
 }
 
-void	ft_sort_integer_table(int *tab, int size)
+int		ft_find_next_prime(int nb)
 {
-	int	i;
-	int	j;
-
-	i = size - 1;
-	while (i > 0)
-	{
-		j = 0;
-		while (j < i)
-		{
-			if (tab[j + 1] < tab[j])
-				swap(&tab[j + 1], &tab[j]);
-			++j;
-		}
-		--i;
-	}
+	while (!(is_prime(nb)))
+		++nb;
+	return (nb);
 }

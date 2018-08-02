@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/31 17:36:42 by flgivern          #+#    #+#             */
-/*   Updated: 2018/07/31 17:37:24 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 14:19:15 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/01 14:47:35 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int	c;
+#include <stdio.h>
 
-	c = *a;
-	*a = *b;
-	*b = c;
+int	ft_recursive_factorial(int nb);
+
+int	main()
+{
+	int	i;
+
+	i = -1;
+	while (i <= 13)
+	{
+		printf("!%d = %d\n", i, ft_recursive_factorial(i));
+		++i;
+	}	
+	return (0);	
 }

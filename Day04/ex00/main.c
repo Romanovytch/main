@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/31 18:29:45 by flgivern          #+#    #+#             */
-/*   Updated: 2018/07/31 18:30:37 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 14:19:15 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/01 14:34:59 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdio.h>
+
+int	ft_iterative_factorial(int nb);
+
+int	main()
 {
 	int	i;
 
-	i = 0;
-	while (str[i] != '\0')
+	i = -1;
+	while (i <= 13)
+	{
+		printf("!%d = %d\n", i, ft_iterative_factorial(i));
 		++i;
-	return (i);
+	}	
+	return (0);	
 }

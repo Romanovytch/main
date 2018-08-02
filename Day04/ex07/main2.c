@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/31 17:42:13 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/01 12:34:39 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 20:27:44 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/01 20:54:47 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdio.h>
 
-void	ft_putstr(char *str)
+int	ft_find_next_prime(int nb);
+
+int	main()
 {
-	while (*str != '\0')
-		ft_putchar(*(str++));
+	int	nb;
+
+	nb = 1453168142;
+	printf("Next prime of %d is %d (expecting 1453168433)\n", nb, ft_find_next_prime(nb));
+	return (0);
 }

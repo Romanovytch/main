@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/31 17:35:00 by flgivern          #+#    #+#             */
-/*   Updated: 2018/07/31 17:36:25 by flgivern         ###   ########.fr       */
+/*   Created: 2018/08/01 16:08:23 by flgivern          #+#    #+#             */
+/*   Updated: 2018/08/02 00:15:24 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+int	ft_recursive_power(int nb, int power)
 {
-	*********nbr = 42;
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	return (nb * ft_recursive_power(nb, power - 1));
 }
