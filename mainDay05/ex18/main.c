@@ -6,7 +6,7 @@
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/03 12:29:38 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/04 20:34:25 by flgivern         ###   ########.fr       */
+/*   Updated: 2018/08/07 17:31:33 by lgillett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	main()
 	str[1] = 'h';
 	str[2] = 'e';
 	str[3] = '\0';
-	printf("Strlcat of \"%s\" and \"%s\" size=10:\n", str, str2);
-   	printf("=> \"%s\", return : %d\n", str, ft_strlcat(str, str2, 10));
+	printf("Strlcat of \"%s\" and \"%s\" size=4:\n", str, str2);
+   	printf("=> \"%s\", return : %d\n", str, ft_strlcat(str, str2, 4));
 	printf("Strlcat of \"%s\" and \"%s\" size=18:\n", str4, str3);
    	printf("=> \"%s\", return : %d\n", str4, ft_strlcat(str4, str3, 50));
 	str[0] = 'T';
@@ -45,8 +45,8 @@ int	main()
 	str[1] = 'h';
 	str[2] = 'e';
 	str[3] = '\0';
-	printf("Strlcat of \"%s\" and \"%s\" size=10:\n", str, str2);
-   	printf("=> \"%s\", return : %lu\n", str, strlcat(str, str2, 10));
+	printf("Strlcat of \"%s\" and \"%s\" size=4:\n", str, str2);
+   	printf("=> \"%s\", return : %lu\n", str, strlcat(str, str2, 4));
 	printf("Strlcat of \"%s\" and \"%s\" size=18:\n", str4, str3);
    	printf("=> \"%s\", return : %lu\n", str4, strlcat(str4, str3, 50));
 	str[0] = 'T';

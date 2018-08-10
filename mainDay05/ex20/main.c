@@ -6,7 +6,7 @@
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/03 13:55:40 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/04 20:41:18 by flgivern         ###   ########.fr       */
+/*   Updated: 2018/08/07 17:58:57 by lgillett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main()
 	ft_putnbr_base(420, "0123456789ABCDEF");
 	printf("\nConverting %d in basis \'%s\" : (expecting 302251112)\n", 5154452, "012345");
 	ft_putnbr_base(5154452, "012345");
-	printf("\nConverting %d in basis \'%s\" : (expecting ))))))))))))((()(())))())(((((( )\n", 2147000000, "-+");
+	printf("\nConverting %d in basis \'%s\" : (expecting ))))))))))))((()(())))())(((((( )\n", 2147000000, "()");
 	ft_putnbr_base(2147000000, "()");
 	printf("\nConverting %d in basis \'%s\" : (expecting 35A4E900)\n", 900000000, "0123456789ABCDEF");
 	ft_putnbr_base(900000000, "0123456789ABCDEF");
