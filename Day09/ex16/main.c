@@ -6,9 +6,11 @@
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/10 11:23:56 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/10 11:27:05 by flgivern         ###   ########.fr       */
+/*   Updated: 2018/08/10 15:15:49 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 unsigned int	ft_active_bits(int value);
 
