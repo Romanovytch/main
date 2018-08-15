@@ -6,7 +6,7 @@
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/13 14:58:15 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/13 15:01:05 by flgivern         ###   ########.fr       */
+/*   Updated: 2018/08/15 23:31:31 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char **argv)
 	int		i;
 
 	i = 1;
-	list = ft_list_push_params(argc, argv);
+	list = ft_list_push_params(argc - 1, argv + 1);
 	if (list == NULL)
 		printf("List is NULL.\n");
 	while (list != NULL)

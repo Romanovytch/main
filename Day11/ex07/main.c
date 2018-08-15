@@ -6,7 +6,7 @@
 /*   By: flgivern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/13 00:59:52 by flgivern          #+#    #+#             */
-/*   Updated: 2018/08/15 17:57:33 by flgivern         ###   ########.fr       */
+/*   Updated: 2018/08/15 23:36:46 by flgivern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,10 @@ int	main()
 	printf("#### Testing with a 13-length list :\n");
 	while (i < 13)
 	{
-		printf("[Element at %d] data : %s (expected \"%s\")\n", i + 1, ft_list_at(list, i + 1)->data, tab[i]);
+		printf("[Element at %d] data : %s (expected \"%s\")\n", i, ft_list_at(list, i)->data, tab[i]);
 		++i;
 	}
+	printf("[Element at %d] data : %s (expected (null))\n", 13, (void *)ft_list_at(list, 13));
 	printf("[Element at %d] data : %s (expected (null))\n", 14, (void *)ft_list_at(list, 14));
 	printf("[Element at %d] data : %s (expected (null))\n", 15, (void *)ft_list_at(list, 15));
 	return (0);
